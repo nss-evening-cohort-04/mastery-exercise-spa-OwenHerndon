@@ -33,7 +33,14 @@ var CarLot = (function () {
   			// productContainer.innerHTML += `${currentTank.description}`
   			// productContainer.innerHTML += `</div>`
   			// productContainer.innerHTML += `</div>`
-  			productContainer.innerHTML += `<div class="container" class="col-xs-6 col-md-4"><img src="${currentTank.jpg}"><br>${currentTank.make}<br>${currentTank.model}<br>${currentTank.year}<br>${currentTank.price}<br>${currentTank.description}</div>`
+  			productContainer.innerHTML += 
+  				`<div id="container" class="col-xs-6 col-md-4">
+  				<img src="${currentTank.jpg}">
+  				<p>${currentTank.model}</p>
+  				<p>${currentTank.make}</p>
+  				<p>${currentTank.year}</p>
+  				<p>$${currentTank.price}</p>
+  				${currentTank.description}</div>`
   		}	
   		//domDisplay();
   	}

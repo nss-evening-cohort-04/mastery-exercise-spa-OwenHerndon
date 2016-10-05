@@ -1,6 +1,7 @@
 {
   "tanks": [
     {
+    	"jpg":"http://worldoftanks.eu/dcont/fb/media/renders/is-7/1024x768.jpg",
     	"make": "Russian",
       	"model": "IS-7",
       	"year": "1946",
@@ -8,6 +9,7 @@
       	"description": "Advanced heavy tank, thick armor angled for driving dirrectly toward the enemies of Stallin"
     },
     {
+    	"jpg": "http://worldoftanks.com/dcont/fb/media/media/art_renders/tiger1/wot_1280_1024_tiger_1_eng.jpg",
     	"make": "Germany",
       	"model": "Tiger",
       	"year": "1944",
@@ -15,13 +17,15 @@
       	"description": "Heavy tank, armored is thick but flat. Mechanically complex"
     },
     {
+    	"jpg": "http://worldoftanks.com/dcont/fb/media/media/art_renders/t71/wot_renders_usa_t71_1024_768_en.jpg?MEDIA_PREFIX=/dcont/fb/",
     	"make": "USA",
-      	"model": "Chaffee",
+      	"model": "T-71",
       	"year": "1943",
-      	"price": "8999",
+      	"price": "50,000",
       	"description": "Fast and Stealthy, Best used for scouting as its armor is no match for higher caliber hits"
     },
     {
+    	"jpg": "http://worldoftanks.com/dcont/fb/media/cromwell_correction/cromwell_1920x1200en.jpg",
     	"make": "Great Britain",
       	"model": "Cromwell",
       	"year": "1944",
@@ -29,25 +33,28 @@
       	"description": "This medium tank is well rounded, possesing speed and a rapid firing weapon. Best used to flank enemies"
     },
     {
-    	"make": "USA",
+    	"jpg": "http://worldoftanks.com/dcont/fb/media/media/art_renders/m4sherman/sherman_1024_768.jpg",
+       	"make": "USA",
       	"model": "Sherman",
       	"year": "1943",
       	"price": "30,000",
       	"description": "The armor is rather weak on this tank, but its a porduct of mass production."
     },
     {
-    	"make": "Germany",
+    	"jpg": "http://worldoftanks.com/dcont/fb/media/media/art_renders/maus/1680x1050.jpg",
+       	"make": "Germany",
       	"model": "Maus",
       	"year": "1946",
       	"price": "7,000,000",
       	"description": "The thickess armor you will find on the battlefield, however its also the slowest"
     },
     {
-    	"make": "USA",
-      	"model": "Hellcat",
-      	"year": "1944",
-      	"price": "600,000",
-      	"description": "Quick and open topped, this is actually a tank destroyer, not a tank. A hunter killer armed with speed and a 76mm cannon"
+    	"jpg": "http://static-ptl-us.gcdn.co/dcont/fb/media/tortoise/wot_renders_britain_tortoise_1024_768_en.jpg",
+    	"make": "Great Britain",
+      	"model": "Tortoise",
+      	"year": "1945",
+      	"price": "3,600,000",
+      	"description": "Slow and sturdy, this is actually a tank destroyer, not a tank. A hunter killer"
     }
   ]
 }
