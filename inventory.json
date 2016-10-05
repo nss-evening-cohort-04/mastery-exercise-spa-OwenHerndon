@@ -1,0 +1,53 @@
+{
+  "tanks": [
+    {
+    	"make": "Russian",
+      	"model": "IS-7",
+      	"year": "1946",
+      	"price": "6,000,000",
+      	"description": "Advanced heavy tank, thick armor angled for driving dirrectly toward the enemies of Stallin"
+    },
+    {
+    	"make": "Germany",
+      	"model": "Tiger",
+      	"year": "1944",
+      	"price": "1,500,000",
+      	"description": "Heavy tank, armored is thick but flat. Mechanically complex"
+    },
+    {
+    	"make": "USA",
+      	"model": "Chaffee",
+      	"year": "1943",
+      	"price": "8999",
+      	"description": "Fast and Stealthy, Best used for scouting as its armor is no match for higher caliber hits"
+    },
+    {
+    	"make": "Great Britain",
+      	"model": "Cromwell",
+      	"year": "1944",
+      	"price": "700,000",
+      	"description": "This medium tank is well rounded, possesing speed and a rapid firing weapon. Best used to flank enemies"
+    },
+    {
+    	"make": "USA",
+      	"model": "Sherman",
+      	"year": "1943",
+      	"price": "30,000",
+      	"description": "The armor is rather weak on this tank, but its a porduct of mass production."
+    },
+    {
+    	"make": "Germany",
+      	"model": "Maus",
+      	"year": "1946",
+      	"price": "7,000,000",
+      	"description": "The thickess armor you will find on the battlefield, however its also the slowest"
+    },
+    {
+    	"make": "USA",
+      	"model": "Hellcat",
+      	"year": "1944",
+      	"price": "600,000",
+      	"description": "Quick and open topped, this is actually a tank destroyer, not a tank. A hunter killer armed with speed and a 76mm cannon"
+    }
+  ]
+}
