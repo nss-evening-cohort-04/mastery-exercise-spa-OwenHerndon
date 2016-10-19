@@ -1,4 +1,4 @@
-var CarLot = (function () {
+var TankLot = (function () {
   
   //var inventory = [];
 
@@ -34,13 +34,14 @@ var CarLot = (function () {
   			// productContainer.innerHTML += `</div>`
   			// productContainer.innerHTML += `</div>`
   			productContainer.innerHTML += 
-  				`<div id="container" class="col-xs-6 col-md-4">
+  				`<div id="container" class="col-xs-6 col-md-4 tank_container">
   				<img src="${currentTank.jpg}">
   				<p>${currentTank.model}</p>
   				<p>${currentTank.make}</p>
   				<p>${currentTank.year}</p>
   				<p>$${currentTank.price}</p>
-  				${currentTank.description}</div>`
+  				<div class="description">${currentTank.description}</div></div>`
+
   		}	
   		//domDisplay();
   	}
@@ -72,6 +73,38 @@ var CarLot = (function () {
 	myRequest.addEventListener("progress", executeThisCodeWhenChunksArrive);
 	myRequest.open("GET", "inventory.json");
 	myRequest.send();
+
+	//var selectedContainer = document.getElementById("container");
+	var selectedTankBio = null;
+	var userInput = document.getElementById("userInput");
+	var containerEl = document.getElementsByClassName("tank_container");
+
+	for (var i = 0; i < containerEl.length; i++) {
+  		containerEl[i].addEventListener("click", function(event) {
+    		for (var x = 0; x < containerEl.length; x++) {
+      			containerEl[x].classList.remove('borderLarge');
+    		}
+    		event.currentTarget.classList.add('borderLarge');
+    		selectedTankBio = event.currentTarget;
+    		userInput.focus();
+    		userInput.value = selectedTank.querySelector('.description').innerHTML;
+  		});
+	}
+
+	document.getElementById('useInput').addEventListener('keyup', function(e) {
+  		if (selectedTankBio) {
+    		selectedTankBio.querySelector('.description').innerHTML = this.value;
+  		}
+	});
+
+	document.getElementById('userInput').addEventListener('keypress', function(e) {
+  		if (e.keyCode == 13) {
+    		selectedTankBio.classList.remove('.borderLarge');
+    		selectedTankBio = null;
+    		this.value = "";
+    		return false;
+  		}
+  	});
 
   return {
     // loadInventory: function (callback) {

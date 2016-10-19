@@ -21,6 +21,10 @@
   	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+.borderLarge{
+	border: 5px solid white;
+}
+
 .col-xs-6 img {
   display: block;
   height: 256px;
