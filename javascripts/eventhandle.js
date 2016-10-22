@@ -12,9 +12,9 @@ var TankLot = (function (newTankLot) {
     			}
     			event.currentTarget.classList.add('borderLarge');
     			selectedTankBio = event.currentTarget;
-    			userInput.value = "";
     			userInput.focus();
-    			userInput.value = selectedTank.querySelector('.description').innerHTML;
+    			userInput.value = selectedTankBio.querySelector('.description').innerHTML;
+    			userInput.value = "";
   			});
 		}
 
@@ -23,15 +23,6 @@ var TankLot = (function (newTankLot) {
     			selectedTankBio.querySelector('.description').innerHTML = this.value;
   			}
 		});
-
-		document.getElementById('userInput').addEventListener('keypress', function(e) {
-  			if (e.keyCode == 13) {
-    			selectedTankBio.classList.remove('.borderLarge');
-    			selectedTankBio = null;
-    			this.value = "";
-    			return false;
-  			}
-  		});
 	}
 	
 	return newTankLot;

@@ -1,4 +1,1 @@
-var TankLot = (function () {
-
-
-})(TankLot||{});
+TankLot.RunXHR();

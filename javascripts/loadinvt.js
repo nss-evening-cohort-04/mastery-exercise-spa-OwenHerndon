@@ -35,15 +35,17 @@ var TankLot = (function (LoadTankLot) {
 
   	}
 
-  	var output = document.getElementById('storefront');
+  	LoadTankLot.RunXHR = function(){
+  		var output = document.getElementById('storefront');
 
-  	var myRequest = new XMLHttpRequest();
+  		var myRequest = new XMLHttpRequest();
 
-	myRequest.addEventListener("load", executeThisCodeAfterFileLoaded); //Callback
-	myRequest.addEventListener("error", executeThisCodeIfXHRFails);
-	myRequest.addEventListener("progress", executeThisCodeWhenChunksArrive);
-	myRequest.open("GET", "inventory.json");
-	myRequest.send();
+		myRequest.addEventListener("load", executeThisCodeAfterFileLoaded); //Callback
+		myRequest.addEventListener("error", executeThisCodeIfXHRFails);
+		myRequest.addEventListener("progress", executeThisCodeWhenChunksArrive);
+		myRequest.open("GET", "inventory.json");
+		myRequest.send();
+	};
 
   return LoadTankLot;
 
