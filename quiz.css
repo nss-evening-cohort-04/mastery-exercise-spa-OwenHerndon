@@ -2,6 +2,10 @@
   width: 200%;
 }
 
+#storefront{
+  margin-top: 3%;
+}
+
 .navbar-brand{
   font-family: ‘Courier New’, Courier, monospace;
 }

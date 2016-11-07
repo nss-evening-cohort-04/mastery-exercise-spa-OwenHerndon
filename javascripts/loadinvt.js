@@ -1,19 +1,18 @@
 var TankLot = (function (LoadTankLot) {
 
-  	console.log("test");
 
   	function executeThisCodeWhenChunksArrive () {
 	  
 	}
 
 	function executeThisCodeIfXHRFails () {
-	  console.log("An error occurred while transferring");
+	  
 	}
 	
 	var tanks;
 
 	function executeThisCodeAfterFileLoaded () {
-		console.log("executeThisCodeAfterFileLoaded it loaded");
+		
 
 		tankData = JSON.parse(this.responseText).tanks;
 
